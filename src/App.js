@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
+//components
+import GreetingCard from './components/GreetingCard';
+
 function App() {
+  const [greeting, setGreeting] = useState('Dear Harry, ');
+  const [body, setBody] = useState('Happy Christmas');
+  const [closing, setClosing] = useState('Cheers, Hagrid');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <GreetingCard
+          greeting={greeting}
+          body={body}
+          closing={closing}/>
     </div>
   );
 }

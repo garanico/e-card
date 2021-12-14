@@ -1,8 +1,17 @@
 .App {
   text-align: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-logo {
+img{
+  width: 100%;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -13,21 +22,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +29,51 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* Greeting Card component styling */
+
+.gc-component-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.greeting-card-container{
+  display: flex;
+  width: 75%;
+  border:solid 5px aqua;
+  border-width: 3px;
+  padding: 2%;
+}
+
+.card-image{
+  /* display: flex; */
+  width: 100%;
+  border: solid 5px purple;
+  margin: auto;
+
+}
+
+.card-message{
+  border: solid 5px yellow;
+  margin: auto;
+  padding: 10%;
+}
+
+.reshare-message-wrapper{
+  flex-wrap: wrap;
+
+}
+.reshare-message{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px ) {
+  .greeting-card-container{
+    flex-direction: column;
+  }
+
+  
 }
