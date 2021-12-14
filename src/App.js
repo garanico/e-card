@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 //components
@@ -11,14 +12,20 @@ function App() {
   const [closing, setClosing] = useState('Cheers, Hagrid');
 
   return (
-    <div className="App">
-       <GreetingCard
+    <HashRouter>
+      <Routes>
+        <Route exact path="/" element={
+          <CardForm />
+        }/>
+        <Route exact path="/preview" element={
+          <Preview 
           greeting={greeting}
+          setGreeting={setGreeting}
           body={body}
           closing={closing}
       />
-
-      <Preview 
+        <Route exact path="/card" element={
+          <GreetingCard
       greeting={greeting}
       setGreeting={setGreeting}
       body={body}
@@ -26,8 +33,8 @@ function App() {
       closing={closing}
       setClosing={setClosing}
       />
-
-    </div>
+    </Routes>
+    </HashRouter>
   );
 }
 

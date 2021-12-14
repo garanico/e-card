@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../App.css';
 import reindeerdog from '../img/reindeerdog.jpg';
 
@@ -20,8 +21,8 @@ function Preview({ greeting, body, closing }) {
                 </div>
             </div>
             <div className="button-controls">
-                <button>Edit</button>
-                <button>Send Card</button>
+                <Link to={{pathname:"/"}}><button>Edit</button></Link>
+                <Link to={{pathname:"/card"}}><button>Send Card</button></Link>
             </div>
             
         </div>
