@@ -3,6 +3,7 @@ import './App.css';
 
 //components
 import GreetingCard from './components/GreetingCard';
+import Preview from './components/Preview';
 
 function App() {
   const [greeting, setGreeting] = useState('Dear Harry, ');
@@ -14,7 +15,18 @@ function App() {
        <GreetingCard
           greeting={greeting}
           body={body}
-          closing={closing}/>
+          closing={closing}
+      />
+
+      <Preview 
+      greeting={greeting}
+      setGreeting={setGreeting}
+      body={body}
+      setBody={setBody}
+      closing={closing}
+      setClosing={setClosing}
+      />
+
     </div>
   );
 }

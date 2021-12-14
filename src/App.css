@@ -11,6 +11,11 @@ img{
   width: 100%;
 }
 
+button{
+  border-style: solid;
+
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -63,12 +68,22 @@ img{
 
 .reshare-message-wrapper{
   flex-wrap: wrap;
+  border: solid 5px lightcoral;
 
 }
 .reshare-message{
   display: flex;
   flex-direction: column;
+  border: solid 5px green;
 }
+
+/* Preview styling:
+see Greeting Card component styling for greeting card styling*/
+
+.button-controls{
+  border: solid 5px rgb(2, 0, 128);
+}
+
 
 @media screen and (max-width: 576px ) {
   .greeting-card-container{

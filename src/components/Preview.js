@@ -1,9 +1,12 @@
 import React from 'react'
-import reindeerdog from '../img/reindeerdog.jpg';
 import '../App.css';
+import reindeerdog from '../img/reindeerdog.jpg';
 
-function GreetingCard({ greeting, body, closing }) {
+
+function Preview({ greeting, body, closing }) {
     return (
+
+
         <div className="gc-component-container">
             <div className="greeting-card-container">
                 <div className="card-image">
@@ -16,15 +19,13 @@ function GreetingCard({ greeting, body, closing }) {
                     <p>{closing}</p>
                 </div>
             </div>
-            <div className="reshare-message-wrapper">
-                <div className="reshare-message">
-                <p>Share Your Own Card!</p>
-                <button>Customize Your Card</button> 
-                </div>
+            <div className="button-controls">
+                <button>Edit</button>
+                <button>Send Card</button>
             </div>
             
         </div>
     )
 }
 
-export default GreetingCard
+export default Preview
