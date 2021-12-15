@@ -8,15 +8,25 @@ import GreetingCard from './components/GreetingCard';
 import Preview from './components/Preview';
 
 function App() {
-  const [greeting, setGreeting] = useState('Dear Harry,');
-  const [body, setBody] = useState('Happy Christmas');
-  const [closing, setClosing] = useState('Cheers, Hagrid');
+  const [greeting, setGreeting] = useState('');
+  const [body, setBody] = useState('');
+  const [closing, setClosing] = useState('');
+  const [email, setEmail] = useState('');
+
 
   return (
     <HashRouter>
       <Routes>
         <Route exact path="/" element={
-          <CardForm />
+          <CardForm
+          greeting={greeting}
+          setGreeting={setGreeting}
+          body={body}
+          setBody={setBody}
+          closing={closing}
+          setClosing={setClosing}
+          email={email}
+          setEmail={setEmail} />
         }/>
         <Route exact path="/preview" element={
           <Preview 
@@ -26,13 +36,18 @@ function App() {
           setBody={setBody}
           closing={closing}
           setClosing={setClosing}
+          email={email}
           />
         }/>
         <Route exact path="/card" element={
           <GreetingCard
           greeting={greeting}
+          setGreeting={setGreeting}
           body={body}
+          setBody={setBody}
           closing={closing}
+          setClosing={setClosing}
+          email={email}
         />
         }/>
     </Routes>
