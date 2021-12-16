@@ -140,6 +140,8 @@ color: #f3f3f5;
 .reshare-message{
   display: flex;
   flex-direction: column;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
 }
 
 /* Preview styling:

@@ -15,7 +15,7 @@ function App() {
   const [importedClosing, setImportedClosing] = useState(query.get("closing") || "Cheers, Hagrid");
   const [email, setEmail] = useState('');
 
-  console.log( query.get("greeting") );
+  console.log(query.get("greeting"));
 
   return (
     <div className="app-wrapper">
@@ -53,9 +53,9 @@ function App() {
             closing={importedClosing}
             setClosing={setImportedClosing}
             email={email}
-          />
+            />
           }/>
-      </Routes>
+        </Routes>
       </HashRouter>
       <Footer />
     </div>

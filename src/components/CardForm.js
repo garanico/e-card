@@ -5,7 +5,6 @@ import '../App.css';
 
 function CardForm({ greeting, setGreeting, body, setBody, closing, setClosing, email, setEmail }) {
 
-
     return (
         <div className="customize-card-container">
             <div className="instructions">
