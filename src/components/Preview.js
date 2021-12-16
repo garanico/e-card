@@ -9,23 +9,22 @@ function Preview({ greeting, body, closing, email }) {
     const sendCard =() => {
         let mailto = `mailto:${email}`;
         mailto += '?subject=You have happy mail!';
-        mailto += '&body=You have received an e-greeting card.'
-        mailto += '%0D%0A%0D%0A'; //
-        mailto += 'Go To Greeting Card';
+        mailto += '&body=You have received an e-greeting card.';
+        mailto += '%0D%0A%0D%0A';
+        mailto += 'Go To Greeting Card:';
         mailto += '%0D%0A'; //'% + number + letter' creates a invisible character, 2 characters creates single line return
     
         let url = 'https://garanico.github.io/e-card/#/card';
         url += `?greeting=${encodeURIComponent(greeting)}`;
-        url += `?body=${encodeURIComponent(body)}`;
-        url += `?closing=${encodeURIComponent(closing)}`;
+        url += `&body=${encodeURIComponent(body)}`;
+        url += `&closing=${encodeURIComponent(closing)}`;
     
         mailto += encodeURIComponent(url);
     
         console.log(mailto);
     
         window.open(mailto);
-        
-      }
+    }
 
     return (
 
@@ -49,4 +48,4 @@ function Preview({ greeting, body, closing, email }) {
     )
 }
 
-export default Preview
+export default Preview;

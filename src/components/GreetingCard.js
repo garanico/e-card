@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Link } from "react-router-dom";
 import reindeerdog from '../img/reindeerdog.jpg';
 import '../App.css';
@@ -28,7 +28,7 @@ function GreetingCard({ greeting, setGreeting, body, setBody, closing, setClosin
             <div className="reshare-message-wrapper">
                 <div className="reshare-message">
                 <p>Share Your Own Card!</p>
-                <Link to={{pathname:"/"}}><button onClick={clearForm}>Customize Your Card</button></Link>
+                <Link to={{pathname:"/"}}><button onClick={()=> clearForm()}>Customize Your Card</button></Link>
                 </div>
             </div>
         </div>

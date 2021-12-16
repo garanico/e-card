@@ -9,14 +9,14 @@ import Preview from './components/Preview';
 import Footer from './components/Footer';
 
 function App() {
-  const query = new URLSearchParams(window.location.search);
+  const query = new URLSearchParams(window.location.hash.split('?')[1]);
   const [importedGreeting, setImportedGreeting] = useState(query.get("greeting") || "Dear Harry,");
   const [importedBody, setImportedBody] = useState(query.get("body") || "I hope you are having a Happy Christmas!");
   const [importedClosing, setImportedClosing] = useState(query.get("closing") || "Cheers, Hagrid");
   const [email, setEmail] = useState('');
 
-  console.log( query.get("greeting") );
-
+  console.log("Greeting:", query.get("greeting"));
+  console.log(window.location.hash.split('?')[1]);
   return (
     <div className="app-wrapper">
       <HashRouter>
@@ -53,9 +53,9 @@ function App() {
             closing={importedClosing}
             setClosing={setImportedClosing}
             email={email}
-          />
+            />
           }/>
-      </Routes>
+        </Routes>
       </HashRouter>
       <Footer />
     </div>
