@@ -6,6 +6,7 @@ import './App.css';
 import CardForm from './components/CardForm';
 import GreetingCard from './components/GreetingCard';
 import Preview from './components/Preview';
+import Footer from './components/Footer';
 
 function App() {
   const query = new URLSearchParams(window.location.search);
@@ -17,6 +18,7 @@ function App() {
   console.log( query.get("greeting") );
 
   return (
+    <div className="app-wrapper">
     <HashRouter>
       <Routes>
         <Route exact path="/" element={
@@ -55,6 +57,8 @@ function App() {
         }/>
     </Routes>
     </HashRouter>
+    <Footer />
+    </div>
   );
 }
 

@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import reindeerdog from '../img/reindeerdog.jpg';
 import '../App.css';
 
+//components
+import Footer from './Footer';
+
 function CardForm({ greeting, setGreeting, body, setBody, closing, setClosing, email, setEmail }) {
-
-    const onSubmit = (event) => {
-        event.preventDefault();
-        console.log(email, greeting, body, closing)
-
-    }
 
 
     return (
         <div className="App">
+            <div className="instructions">
+                <p>Send your own card by editing the form below!</p>
+            </div>
             <div className="card-form-container">
                 <div className="card-image">
                     <img src={reindeerdog} alt="dog with reindeer antlers" />
@@ -24,7 +24,7 @@ function CardForm({ greeting, setGreeting, body, setBody, closing, setClosing, e
                     <input 
                         name="email"
                         type="email" 
-                        placeholder="harry@hogwarts.com" 
+                        placeholder="harry@hogwarts.edu" 
                         value={email} 
                         onChange={event => setEmail(event.target.value)} 
                     />
@@ -57,7 +57,7 @@ function CardForm({ greeting, setGreeting, body, setBody, closing, setClosing, e
                         onChange={event => setClosing(event.target.value)}
                     />  
 
-                    <Link to={{pathname:"/preview"}}><button type="submit">Preview Card</button></Link>              
+                    <Link to={{pathname:"/preview"}}><button type="submit" className="preview-btn">Preview Card</button></Link>              
                 </form>
             </div>
         </div>

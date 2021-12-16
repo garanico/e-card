@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import reindeerdog from '../img/reindeerdog.jpg';
 
+//components
+import Footer from './Footer';
+
 
 function Preview({ greeting, body, closing, email }) {
 
@@ -43,9 +46,8 @@ function Preview({ greeting, body, closing, email }) {
             </div>
             <div className="button-controls">
                 <Link to={{pathname:"/"}}><button>Edit</button></Link>
-                <Link to={{pathname:"/card"}}><button onClick={sendCard}>Send Card</button></Link>
+                <Link to={{pathname:"/card"}}><button onClick={sendCard}>Send</button></Link>
             </div>
-            
         </div>
     )
 }

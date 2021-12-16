@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import reindeerdog from '../img/reindeerdog.jpg';
 import '../App.css';
 
+//components
+import Footer from './Footer';
+
 function GreetingCard({ greeting, setGreeting, body, setBody, closing, setClosing, email, setEmail }) {
     const clearForm = () =>{
         setGreeting("");
@@ -31,7 +34,6 @@ function GreetingCard({ greeting, setGreeting, body, setBody, closing, setClosin
                 <Link to={{pathname:"/"}}><button onClick={clearForm}>Customize Your Card</button></Link>
                 </div>
             </div>
-            
         </div>
     )
 }
