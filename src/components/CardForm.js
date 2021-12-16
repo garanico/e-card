@@ -28,6 +28,7 @@ function CardForm({ greeting, setGreeting, body, setBody, closing, setClosing, e
                     <label htmlFor="greeting">Greeting:</label>
                     <input 
                         name="greeting"
+                        id="greeting"
                         type="text" 
                         placeholder="Dear Harry,"
                         value={greeting}
@@ -37,6 +38,7 @@ function CardForm({ greeting, setGreeting, body, setBody, closing, setClosing, e
                     <label htmlFor="body">Body:</label>
                     <textarea 
                         name="body"
+                        id="body"
                         type="text" 
                         placeholder="Happy Christmas! I'll see you after the holiday break!" 
                         rows="10"
@@ -46,7 +48,8 @@ function CardForm({ greeting, setGreeting, body, setBody, closing, setClosing, e
 
                     <label htmlFor="closing">Closing:</label>
                     <input 
-                        name="closing" 
+                        name="closing"
+                        id="closing" 
                         type="text" 
                         placeholder="Cheers, Hagrid"
                         value={closing} 
