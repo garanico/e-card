@@ -12,7 +12,7 @@ function CardForm({ greeting, setGreeting, body, setBody, closing, setClosing, e
     return (
         <div className="customize-card-container">
             <div className="instructions">
-                <p>Send your own card by editing the form below!</p>
+                <p>Send a card by editing the form below!</p>
             </div>
             <div className="card-form-container">
                 <div className="card-image">

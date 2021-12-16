@@ -19,45 +19,45 @@ function App() {
 
   return (
     <div className="app-wrapper">
-    <HashRouter>
-      <Routes>
-        <Route exact path="/" element={
-          <CardForm
-          greeting={importedGreeting}
-          setGreeting={setImportedGreeting}
-          body={importedBody}
-          setBody={setImportedBody}
-          closing={importedClosing}
-          setClosing={setImportedClosing}
-          email={email} 
-          setEmail={setEmail}
+      <HashRouter>
+        <Routes>
+          <Route exact path="/" element={
+            <CardForm
+            greeting={importedGreeting}
+            setGreeting={setImportedGreeting}
+            body={importedBody}
+            setBody={setImportedBody}
+            closing={importedClosing}
+            setClosing={setImportedClosing}
+            email={email} 
+            setEmail={setEmail}
+            />
+          }/>
+          <Route exact path="/preview" element={
+            <Preview 
+            greeting={importedGreeting}
+            setGreeting={setImportedGreeting}
+            body={importedBody}
+            setBody={setImportedBody}
+            closing={importedClosing}
+            setClosing={setImportedClosing}
+            email={email}
+            />
+          }/>
+          <Route exact path="/card" element={
+            <GreetingCard
+            greeting={importedGreeting}
+            setGreeting={setImportedGreeting}
+            body={importedBody}
+            setBody={setImportedBody}
+            closing={importedClosing}
+            setClosing={setImportedClosing}
+            email={email}
           />
-        }/>
-        <Route exact path="/preview" element={
-          <Preview 
-          greeting={importedGreeting}
-          setGreeting={setImportedGreeting}
-          body={importedBody}
-          setBody={setImportedBody}
-          closing={importedClosing}
-          setClosing={setImportedClosing}
-          email={email}
-          />
-        }/>
-        <Route exact path="/card" element={
-          <GreetingCard
-          greeting={importedGreeting}
-          setGreeting={setImportedGreeting}
-          body={importedBody}
-          setBody={setImportedBody}
-          closing={importedClosing}
-          setClosing={setImportedClosing}
-          email={email}
-        />
-        }/>
-    </Routes>
-    </HashRouter>
-    <Footer />
+          }/>
+      </Routes>
+      </HashRouter>
+      <Footer />
     </div>
   );
 }

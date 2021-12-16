@@ -1,9 +1,11 @@
+/* Global Styles */
+
 *{
   box-sizing: border-box;
 }
 
 .app-wrapper{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -12,8 +14,6 @@
   background-color: #a7dbab;
 }
 
-/* Element styles */
-
 button{
   border-style: solid; 
   border: 1px;
@@ -21,7 +21,6 @@ button{
   background-color: #d05663;
   border-radius: 5px;
   color: #000;
-  font-weight: bold;
   padding: 8px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -35,7 +34,7 @@ img{
 footer{
   display: flex;
   justify-content:space-between;
-  color: #fff;
+  color: #f3f3f5;
   background-color: #073431;
   width: 100%;
   height: 50px;
@@ -67,7 +66,7 @@ label{
   margin: 5px 0 5px 5px;
   font-family: 'Playfair Display', serif;
   font-size: 14px;
-  color: #fff;
+  color: #f3f3f5;;
 }
 
 textarea{
@@ -83,7 +82,6 @@ textarea{
   margin-right: 20px;
   font-size: 30px;
   display: flex;
-  /* border: solid 5px rgba(255, 0, 0, 0.438); */
   width: 10%;
   line-height: 1.5em;
   justify-content: space-between;
@@ -91,7 +89,7 @@ textarea{
 
 .icon-container a:link .fa,
 .icon-container a:visited .fa {
-color: #fff;
+color: #f3f3f5;
 }
 .fa-github-square, 
 .fa-instagram, 
@@ -101,7 +99,6 @@ color: #fff;
 
 .copyright-container{
   margin-left: 20px;
-  /* border: solid 5px rgb(119, 67, 74); */
 }
 
 /* Greeting Card component styling */
@@ -117,7 +114,6 @@ color: #fff;
 .greeting-card-container{
   display: flex;
   width: 75%;
-  border:solid 5px aqua; 
   background-color: #f3f3f5;
   border-color: #d05663;
   border-width: 5px;
@@ -140,20 +136,16 @@ color: #fff;
 
 .reshare-message-wrapper{
   flex-wrap: wrap;
-  border: solid 5px lightcoral;
-
 }
 .reshare-message{
   display: flex;
   flex-direction: column;
-  border: solid 5px green;
 }
 
 /* Preview styling:
 see Greeting Card component styling for greeting card styling*/
 
 .button-controls{
-  /* border: solid 5px rgb(2, 0, 128); */
   display: flex;
   justify-content:space-between;
   width: 50%;
@@ -175,10 +167,6 @@ see Greeting Card component styling for greeting card styling*/
   display: flex;
   width: 70%;
   padding: 5%;
-  overflow: auto;
-  border: solid 8px #d05663;
-  border-top-left-radius: 80px 80px;
-  border-bottom-right-radius: 80px 80px;
   background-color: #a7dbab;
 }
 
@@ -220,7 +208,6 @@ see Greeting Card component styling for greeting card styling*/
   }
   .copyright-container{
     margin:0;
-    /* border: solid 5px blue; */
   }
   i{
     margin: 5px;
