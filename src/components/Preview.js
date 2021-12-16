@@ -11,7 +11,7 @@ function Preview({ greeting, body, closing, email }) {
         mailto += '?subject=You have happy mail!';
         mailto += '&body=You have received an e-greeting card.'
         mailto += '%0D%0A%0D%0A'; //
-        mailto += 'Go To Greeting Card';
+        mailto += 'Go To Greeting Card:';
         mailto += '%0D%0A'; //'% + number + letter' creates a invisible character, 2 characters creates single line return
     
         let url = 'https://garanico.github.io/e-card/#/card';
