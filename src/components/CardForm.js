@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import reindeerdog from '../img/reindeerdog.jpg';
 import '../App.css';
 
-//components
-import Footer from './Footer';
-
 function CardForm({ greeting, setGreeting, body, setBody, closing, setClosing, email, setEmail }) {
 
 

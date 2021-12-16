@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import reindeerdog from '../img/reindeerdog.jpg';
 
-//components
-import Footer from './Footer';
-
 
 function Preview({ greeting, body, closing, email }) {
 
