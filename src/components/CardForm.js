@@ -10,7 +10,7 @@ function CardForm({ greeting, setGreeting, body, setBody, closing, setClosing, e
 
 
     return (
-        <div className="App">
+        <div className="customize-card-container">
             <div className="instructions">
                 <p>Send your own card by editing the form below!</p>
             </div>
