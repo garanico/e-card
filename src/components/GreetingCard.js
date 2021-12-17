@@ -15,15 +15,15 @@ function GreetingCard({ greeting, setGreeting, body, setBody, closing, setClosin
     return (
         <div className="gc-component-container">
             <div className="greeting-card-container">
-                <div className="card-image">
-                    <img src={reindeerdog} alt="dog with reindeer antlers" />
-                </div>
+                    <div className="card-image">
+                        <img src={reindeerdog} alt="dog with reindeer antlers" />
+                    </div>
 
-                <div className="card-message">
-                    <p>{greeting}</p>
-                    <p>{body}</p>
-                    <p>{closing}</p>
-                </div>
+                    <div className="card-message">
+                        <p>{greeting}</p>
+                        <p>{body}</p>
+                        <p>{closing}</p>
+                    </div>
             </div>
             <div className="reshare-message-wrapper">
                 <div className="reshare-message">
